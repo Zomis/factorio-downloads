@@ -22,12 +22,13 @@ def perform() {
     duga.dugaResult(str.toString())
 }
 
+/*
 properties(
     [
         pipelineTriggers([cron('40 23 * * *')]),
     ]
 )
-
+*/
 node {
     stage("Get and report downloads") {
         perform()
